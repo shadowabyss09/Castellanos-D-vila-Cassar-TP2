@@ -1,0 +1,3 @@
+https://ai.studio/apps/043b15c6-9163-420e-bce0-230ba5352d7b?fullscreenApplet=true
+
+has que existan golpes hacia abajo y hacia arriba cuando ponemos el jostik hacia ariba o abajo, tambien que la pantalla no sea de manera vertical sino horizontal, agrega la garra enlongada si usamos a hornet, y el corazon de cristal si usamos al caballerito, arregla algunos bugs como la vida, el daño y las coliciones ante enemigos, ademas agrega el retroseso a enemigos cuando son golpeados y al personaje cuando es golpeado
