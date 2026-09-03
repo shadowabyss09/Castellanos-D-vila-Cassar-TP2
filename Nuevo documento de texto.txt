@@ -1,3 +1,40 @@
-https://ai.studio/apps/043b15c6-9163-420e-bce0-230ba5352d7b?fullscreenApplet=true
+TP N°1
 
-has que existan golpes hacia abajo y hacia arriba cuando ponemos el jostik hacia ariba o abajo, tambien que la pantalla no sea de manera vertical sino horizontal, agrega la garra enlongada si usamos a hornet, y el corazon de cristal si usamos al caballerito, arregla algunos bugs como la vida, el daño y las coliciones ante enemigos, ademas agrega el retroseso a enemigos cuando son golpeados y al personaje cuando es golpeado
+1) Entidades: Pacientes, Medicos, Turnos
+Atributos: 
+Paciente: ID_Paciente, DNI, NyA, Obra social
+Medicos: ID_Medico, Matricula, Nombre completo, Especialidad
+Turnos: ID_Turno FechaHora, Motivo, ID_Paciente, ID_medico 
+Relaciones: Medico-turno(1-m), Medico-paciente (1-m), Paciente-turno(1-m)
+
+2 )
+A)  Viola la 2FN porque nada mas depende de 1 clave primaria cuando debería depender de las 2.
+B)  Las 3 nuevas tablas resultantes son:
+TABLA: ALUMNO
+TABLA: MATERIA 
+TABLA: ALUMNO-MATERIA
+ 
+3)  La diferencia entre integridad de entidad y integridad referencial es que la integridad referencial mantiene coherencia entre tablas, vinculando las claves foráneas con l las claves primarias existentes, mientras que la integridad de entidad usa una clave primaria sin valores nulos para asegurar que cada fila sea única. 
+4)  CREATE TABLE TURNO(
+-> ID_Turno, 
+->FechaHora,
+->Motivo,
+->ID_Paciente,
+->ID_Medico
+->);
+5)  Esto no, nos lo explicaron 
+6)	 a) El procesador de consultas: La función que cumple es de poder hacerle una consulta el procesador (por ejemplo, que nos de tal información de tal libro) y que este nos de exactamente lo que le pedimos.
+	  b)El catalogo de datos: La función que cumple es que almacena todos los datos que el usuario o nosotros le ingresamos dentro.
+7)  Esto no, nos lo explicaron 
+8) Esto no, nos lo explicaron
+9)  Esto no, nos lo explicaron
+10) 
+A) Un índice es una estructura de datos auxiliar que el motor de almacenamiento crea sobre una o más columnas de una tabla fila por fila para encontrar registros que coinciden con una condición, el motor consulta al índice y localiza los datos mucho más rápido, similar al índice de un libro.
+
+B) sentencia SQL
+CREATE INDEX  idx_turno_idpaciente
+ON TURNO(ID_Paciente);
+
+
+
+	
